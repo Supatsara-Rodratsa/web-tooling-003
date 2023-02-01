@@ -9,7 +9,7 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
-  css: ["@/assets/css/global.css"],
+  css: ["@/assets/css/main.css"],
   imports: {
     dirs: ["stores"],
   },

@@ -9,7 +9,7 @@ const items: Item[] = [
 ]
 </script>
 <template>
-  <div>
+  <div class="bg-primary h-screen">
     <div v-for="item in items" :key="item.id">
       <!-- content -->
       {{ item }}
