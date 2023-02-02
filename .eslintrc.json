@@ -6,17 +6,16 @@
   "extends": [
     "eslint:recommended",
     "@nuxtjs/eslint-config-typescript",
-    "plugin:prettier/recommended",
-    "prettier"
+    "plugin:prettier/recommended"
   ],
   "overrides": [],
   "parser": "vue-eslint-parser",
-    "parserOptions": {
-        "parser": {
-            "ts": "@typescript-eslint/parser",
-            "<template>": "espree"
-        }
-    },
+  "parserOptions": {
+    "parser": {
+      "ts": "@typescript-eslint/parser",
+      "<template>": "espree"
+    }
+  },
   "plugins": ["vue", "@typescript-eslint"],
   "rules": {
     "vue/multi-word-component-names": "off",
