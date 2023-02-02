@@ -1,18 +1,17 @@
-<script lang="ts" setup>
-type Item = { id: string }
-const items: Item[] = [
-  { id: "1" },
-  { id: "2" },
-  { id: "3" },
-  { id: "4" },
-  { id: "5" },
-]
-</script>
 <template>
-  <div class="bg-primary h-screen">
-    <div v-for="item in items" :key="item.id">
-      <!-- content -->
-      {{ item }}
+  <div
+    class="bg-primary h-screen flex justify-center items-center overflow-hidden relative"
+  >
+    <div class="absolute top-[30%] flex flex-col gap-10 items-center">
+      <h1 class="flex font-bold text-[40px] text-darkBrown">Scented Candles</h1>
+      <Button
+        :title="'View Products'"
+        @click="navigateTo('/products')"
+      ></Button>
+    </div>
+
+    <div class="object-fill">
+      <img src="~assets/img/image.png" width="400" />
     </div>
   </div>
 </template>
