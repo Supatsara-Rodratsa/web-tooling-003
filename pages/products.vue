@@ -17,7 +17,9 @@ watch(selectedProduct.value, (newItem) => {
 </script>
 <template>
   <div class="bg-primary overflow-scroll flex flex-col justify-center relative">
-    <h1 class="text-[40px] py-14 w-full text-center font-medium">Products</h1>
+    <h1 class="text-[40px] py-14 w-full text-center font-medium">
+      Candle Products
+    </h1>
     <div class="flex flex-wrap gap-5 justify-center">
       <div
         v-for="(product, index) in products"
